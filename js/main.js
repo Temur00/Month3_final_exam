@@ -11,7 +11,7 @@ function toggleBacktop() {
   ) {
     backtop.style.bottom = "20px";
   } else {
-    backtop.style.bottom = "-50px";
+    backtop.style.bottom = "-70px";
   }
 }
 
@@ -35,3 +35,14 @@ hamburger.onclick = function () {
   navBar = document.querySelector(".nav-bar");
   navBar.classList.toggle("active");
 };
+
+let modeBtn = document.getElementById("dark-light");
+
+modeBtn.addEventListener("click", function () {
+  if (document.body.className != "light") {
+    this.firstElementChild.src = "../images/light.svg";
+  } else {
+    this.firstElementChild.src = "../images/dark.svg";
+  }
+  document.body.classList.toggle("light");
+});
