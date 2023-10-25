@@ -1977,6 +1977,8 @@ body .main-home section:nth-child(8) .latest-blog .cards {
 body .main-home section:nth-child(8) .latest-blog .cards .card {
   width: 400px;
   height: 518px;
+  border-radius: 8px;
+  gap: 10px;
 }
 body .main-home section:nth-child(8) .latest-blog .cards .card .card-image {
   width: 368px;
